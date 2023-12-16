@@ -1,0 +1,202 @@
+.contentHome {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: crosshair;
+    &::-webkit-scrollbar {
+        width: 50px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: black; /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: white; /* color of the scroll thumb */
+        border-radius: 200px; /* roundness of the scroll thumb */
+        border: 20px solid black; /* creates padding around scroll thumb */
+    }
+}
+
+.navbar {
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    input {
+        background-color: white;
+        width: 50%;
+        padding: 20px;
+        border-radius: 5px;
+        margin: auto;
+        color: rgb(17, 17, 17);
+        font-weight: 800;
+        transition: 0.2s;
+        &:focus {
+            outline: none;
+            width: 90%;
+        }
+    }
+}
+
+.sun {
+    display: flex;
+    position: relative;
+    user-select: none;
+    width: calc(50% - 200px);
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    section {
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.181);
+        border-radius: 10px;
+        position: relative;
+        img {
+            width: 70%;
+        }
+        h2 {
+            color: white;
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            letter-spacing: 1px;
+            font-weight: 100;
+            width: 100%;
+        }
+    }
+    div {
+        display: flex;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.181);
+        border-radius: 10px;
+        height: 130px;
+        margin: 20px;
+        padding: 20px 50px;
+        h2 {
+            margin: auto 10px;
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+        img {
+            height: 80%;
+            margin: auto;
+        }
+    }
+}
+
+.data {
+    width: calc(25% - 200px);
+    padding: 100px;
+    user-select: none;
+    h1 {
+        font-size: 80px;
+        background: rgb(0, 198, 252);
+        background: linear-gradient(45deg, rgb(0, 13, 90) 30%, rgb(92, 0, 172) 55%);
+        -webkit-background-clip: text;
+        font-weight: 800;
+        color: transparent;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+    img {
+        width: 100px;
+    }
+}
+
+.sug {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 110px);
+    display: none;
+    user-select: none;
+    background-color: black;
+    border-radius: 5px;
+    left: 50%;
+    top: 110px;
+    z-index: 20;
+    overflow: hidden;
+    transform: translate(-50%, 0);
+    li {
+        text-align: left;
+        padding: 20px;
+        background-color: rgb(17, 17, 17);
+        margin: 5px 40px;
+        border-radius: 5px;
+        &:hover {
+            color: rgb(17, 17, 17);
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.favoris {
+    width: 25%;
+    height: 80%;
+    h2 {
+        font-size: 30px;
+        background: rgb(0, 198, 252);
+        background: linear-gradient(45deg, rgb(0, 13, 90) -20%, rgb(92, 0, 172) 100%);
+        -webkit-background-clip: text;
+        font-weight: 800;
+        color: transparent;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+    div,
+    button {
+        user-select: none;
+        background: linear-gradient(45deg, rgb(0, 13, 90) -20%, rgb(92, 0, 172) 100%);
+        color: rgb(17, 17, 17);
+        border-radius: 40px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 20px 40px;
+        color: rgb(255, 255, 255);
+        &:hover {
+            background: white;
+            color: rgb(17, 17, 17);
+        }
+    }
+    div {
+        width: 90%;
+        display: flex;
+        padding: 10px;
+        position: relative;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        margin: 10px auto;
+        h1 {
+            margin: auto;
+        }
+        img {
+            margin: auto;
+            scale: 1.2;
+        }
+        h3 {
+            margin: auto;
+            width: 60%;
+        }
+        &:hover {
+            h1,h3 {
+                color: rgb(17, 17, 17);
+            }
+        }
+    }
+}
